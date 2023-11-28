@@ -11,9 +11,7 @@ import ComposableArchitecture
 struct CounterPreview: View {
     var body: some View {
         CounterView(
-            store: Store(initialState: CounterFeature.State()) {
-                CounterFeature()
-            }
+            store: TCACounterDemoApp.store
         )
     }
 }
