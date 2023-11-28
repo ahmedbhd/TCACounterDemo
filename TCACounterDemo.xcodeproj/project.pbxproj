@@ -16,6 +16,7 @@
 		78CE98462B15DA330037AED6 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 78CE98452B15DA330037AED6 /* ComposableArchitecture */; };
 		78CE98482B15DB420037AED6 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE98472B15DB420037AED6 /* CounterFeature.swift */; };
 		78CE985F2B15F4E50037AED6 /* CounterPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE985E2B15F4E50037AED6 /* CounterPreview.swift */; };
+		78CE98642B1644A70037AED6 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE98632B1644A70037AED6 /* NumberFactClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		78CE98472B15DB420037AED6 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		78CE985E2B15F4E50037AED6 /* CounterPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPreview.swift; sourceTree = "<group>"; };
 		78CE98602B1602810037AED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		78CE98632B1644A70037AED6 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				78CE98602B1602810037AED6 /* Info.plist */,
 				78CE981A2B15D9470037AED6 /* TCACounterDemoApp.swift */,
 				78CE98472B15DB420037AED6 /* CounterFeature.swift */,
+				78CE98632B1644A70037AED6 /* NumberFactClient.swift */,
 				78CE985E2B15F4E50037AED6 /* CounterPreview.swift */,
 				78CE981E2B15D9490037AED6 /* Assets.xcassets */,
 				78CE98202B15D9490037AED6 /* Preview Content */,
@@ -169,6 +172,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				78CE98622B1630A80037AED6 /* PBXTargetDependency */,
 				78CE98292B15D9490037AED6 /* PBXTargetDependency */,
 			);
 			name = TCACounterDemoTests;
@@ -274,6 +278,7 @@
 				78CE985F2B15F4E50037AED6 /* CounterPreview.swift in Sources */,
 				78CE98482B15DB420037AED6 /* CounterFeature.swift in Sources */,
 				78CE981B2B15D9470037AED6 /* TCACounterDemoApp.swift in Sources */,
+				78CE98642B1644A70037AED6 /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +315,10 @@
 		78CE984A2B15DB9C0037AED6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 78CE98492B15DB9C0037AED6 /* ComposableArchitecture */;
+		};
+		78CE98622B1630A80037AED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 78CE98612B1630A80037AED6 /* ComposableArchitecture */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,6 +639,11 @@
 			productName = ComposableArchitecture;
 		};
 		78CE98492B15DB9C0037AED6 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78CE98442B15DA330037AED6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		78CE98612B1630A80037AED6 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 78CE98442B15DA330037AED6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
